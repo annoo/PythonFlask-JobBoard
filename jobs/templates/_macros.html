@@ -22,7 +22,7 @@
 <div class="columns is-multiline">"
     {% for job in jobs %}
     <div class="column is-half">
-        add a call to the show_job macro passing in an individual job from the for loop
+        {{ show_job(job) }}
     </div>
     {% endfor %}
 </div>
