@@ -9,7 +9,7 @@
       <div class="content">
           <p>
             <a>{{ job['employer_name'] }}<br>
-            dollar{{ job['salary'] }}<br>
+            ${{ job['salary'] }}<br>
             {{ job['description'] }}
             </a>
           </p>
@@ -19,9 +19,9 @@
 {% endmacro %}
 
 {% macro show_jobs(jobs) %}
-<div class="columns" class="is-multiline">"
+<div class="columns is-multiline">"
     {% for job in jobs %}
-    <div class="column" class="is-half">
+    <div class="column is-half">
         add a call to the show_job macro passing in an individual job from the for loop
     </div>
     {% endfor %}
